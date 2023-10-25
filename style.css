@@ -15,9 +15,9 @@ button{
 
 table {
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
     margin: auto;
-    font-size: 40pt;
+    font-size: 60pt;
 }
 
 th, td {
