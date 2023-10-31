@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Attendi</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <meta http-equiv="refresh" content="130; URL=5_accendi.html">
+    </head>
+    
+    <body>
+        <input type="button" value="INDIETRO" onclick="history.go(-1);return true;" name="button" class="back-button">
+        <a href="../../index.html"> <button>MENU'</button></a> <br> <br>
+        ATTENDI
+        <div id="countdown"> 5</div>
+
+         <script>
+            let seconds = 130;
+            const countdown = document.getElementById("countdown");
+
+            const updateCountdown = () => {
+            countdown.innerText = seconds;
+            seconds--;
+
+            if (seconds < 0) {
+                clearInterval(interval);
+            }
+            };
+
+            updateCountdown();
+            const interval = setInterval(updateCountdown, 1000);
+        </script>
+    </body>
+</html>
